@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Studio Premium Access Center</title>
+  <meta name="description" content="Tech Studio Premium Access Center - Netflix Premium, private profile, own watching history, profile lock and customer support.">
+
+  <meta property="og:title" content="Tech Studio Premium Access Center">
+  <meta property="og:description" content="Netflix Premium RM15.90/month with private profile, own watching history and support.">
+  <meta property="og:image" content="https://techstudio-premium.onrender.com/product.png">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tech Studio Premium Access Center">
+  <meta name="twitter:description" content="Netflix Premium RM15.90/month with private profile and support.">
+  <meta name="twitter:image" content="https://techstudio-premium.onrender.com/product.png">
+  <meta property="og:url" content="https://techstudio-premium.onrender.com/">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="loader" class="loader">
+  <img src="logo.png" alt="Tech Studio Logo">
+</div>
+
+<header class="topbar">
+  <div class="nav">
+    <div class="logo">
+      <img src="logo.png" alt="Tech Studio Logo">
+    </div>
+
+    <div class="nav-links">
+      <a href="#order">Order</a>
+      <a href="#guide">Guide</a>
+      <a href="#compare">Compare</a>
+      <a href="#support">Support</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">TECH STUDIO PREMIUM</p>
+
+      <img src="netflix-logo.png" class="netflix-logo" alt="Netflix">
+      
+      <h1>PREMIUM</h1>
+
+      <p class="hero-desc">
+        Private Profile • Own Watching History • Profile Lock
+      </p>
+
+      <div class="hero-price">
+        RM15.90 <span>/ Month</span>
+      </div>
+
+      <div class="hero-buttons">
+        <button onclick="goOrder()" class="primary-btn hero-btn">Order Now</button>
+        <a href="#guide" class="guide-link">View Guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order" class="section">
+    <div class="section-title">
+        <p class="eyebrow">PRODUCT</p>
+        <h2>Choose Your Plan</h2>
+        <p class="muted">
+            Premium Netflix access with private profile and full support.
+        </p>
+    </div>
+    <div class="product-card">
+      <div class="product-layout">
+
+        <div class="product-left">
+          <img src="product.png" class="product-poster">
+        </div>
+
+        <div class="product-right">
+          <p class="eyebrow">NETFLIX PREMIUM</p>
+
+          <h2>Private Profile Access</h2>
+
+          <p class="muted">
+            1 Month • 1 User / 1 Profile
+          </p>
+
+          <div class="features-grid">
+            <div>✓ Private Profile</div>
+            <div>✓ Own History</div>
+            <div>✓ Profile Lock</div>
+            <div>✓ Full Support</div>
+          </div>
+          
+          <div class="product-price">
+              RM15.90
+          </div>
+
+          <button onclick="goOrder()" class="primary-btn">
+            Continue to Order
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDE -->
+  <section id="guide" class="section">
+    <div class="section-title">
+      <p class="eyebrow">HELP CENTER</p>
+      <h2>Guide & Support</h2>
+      <p class="muted">Everything you need after purchase.</p>
+    </div>
+
+    <div class="guide-grid">
+
+      <div class="mini-card">
+        <div class="card-head">
+          <div class="icon-box">🔐</div>
+          <h3>Login Guide</h3>
+        </div>
+        <p>Learn how to login using the provided details. Open the guide below for detailed instructions. </p>
+        <button onclick="openGuide()" class="secondary-btn full">
+            View Guide
+        </button>
+      </div>
+
+      <div class="mini-card">
+        <div class="card-head">
+          <div class="icon-box red">🛡️</div>
+          <h3>Verification Code</h3>
+        </div>
+        <p>Watch the tutorial first, then get your verification code.</p>
+
+        <div class="two-buttons">
+          <button onclick="watchVerification()" class="secondary-btn">Watch Tutorial</button>
+          <button onclick="getVerificationCode()" class="primary-btn">Get Code</button>
+        </div>
+      </div>
+
+      <div class="mini-card">
+        <div class="card-head">
+          <div class="icon-box">🏠</div>
+          <h3>Household Issues</h3>
+        </div>
+        <p>Follow the tutorial before redeeming your household code.</p>
+
+        <div class="two-buttons">
+          <button onclick="watchHousehold()" class="secondary-btn">Watch Tutorial</button>
+          <button onclick="getHouseholdCode()" class="primary-btn">Redeem Code</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section id="compare" class="section compare-section">
+
+    <div class="section-title">
+        <p class="eyebrow">PROFILE COMPARISON</p>
+
+        <h2>Shared vs Private</h2>
+
+        <p class="muted">
+            Compare the differences between Shared and Private Profile.
+        </p>
+    </div>
+
+    <img
+        src="profile-compare.png"
+        class="compare-banner"
+    >
+
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support" class="section">
+    <div class="support-card">
+      <p class="eyebrow">SUPPORT</p>
+      <h2>Need Help?</h2>
+      <p class="muted">Join our updates channel or contact our support team.</p>
+
+      <div class="support-buttons">
+        <button onclick="joinChannel()" class="secondary-btn full">Join Updates Channel</button>
+        <button onclick="contactSupport()" class="primary-btn">Contact Support</button>
+      </div>
+    </div>
+  </section>
+
+<div id="guideModal" class="modal">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeGuide()">×</button>
+    <h2>Login Guide</h2>
+    <img src="login-guide.png" class="modal-img">
+  </div>
+</div>
+
+<div id="welcomePopup" class="popup-overlay">
+
+    <div class="popup-card">
+
+        <button
+            class="popup-close"
+            onclick="closePopup()"
+        >
+            ×
+        </button>
+
+        <img
+            src="product.png"
+            class="popup-image"
+        >
+
+        <p class="eyebrow">
+            NETFLIX PREMIUM
+        </p>
+
+        <h2>
+            Private Profile Access
+        </h2>
+
+        <p class="popup-price">
+            RM15.90
+        </p>
+
+        <button
+            onclick="goOrder(); closePopup();"
+            class="primary-btn"
+        >
+            Order Now
+        </button>
+
+        <a
+            href="#"
+            onclick="closePopup()"
+            class="popup-link"
+        >
+            Continue Browsing
+        </a>
+
+    </div>
+
+</div>
+
+</main>
+
+<footer class="footer">
+  <h3>Tech Studio</h3>
+  <p>Premium Digital Access Service</p>
+  <small>© 2026 Tech Studio. All rights reserved.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
