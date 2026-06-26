@@ -108,6 +108,19 @@ body {
     transform:scaleX(1);
 }
 
+.nav-divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255,255,255,.18);
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .nav-divider {
+    display: none;
+  }
+}
+
 .hero {
   min-height: 82vh;
   display: flex;
@@ -745,3 +758,92 @@ button,
   }
 }
 
+.guide-intro{
+  max-width:760px;
+  margin:auto;
+  padding:30px 20px 22px;
+  text-align:center;
+}
+
+.guide-intro h1{
+  font-size:42px;
+  margin:0 0 10px;
+  font-weight:800;
+}
+
+.guide-intro p{
+  margin:0 auto;
+  color:#aaa;
+  font-size:14px;
+  text-align:center;
+}
+
+.guide-center{
+  max-width:760px;
+  margin:auto;
+  padding:18px 18px 70px;
+  display:grid;
+  gap:16px;
+}
+
+.guide-panel{
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:18px;
+  padding:22px;
+}
+
+.guide-panel h2{
+  font-size:22px;
+  margin:0;
+}
+
+.guide-panel p{
+  color:#aaa;
+  font-size:15px;
+  line-height:1.6;
+  margin:12px 0 16px;
+}
+
+.guide-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.guide-panel .primary-btn,
+.guide-panel .secondary-btn{
+    height:42px;
+    padding:0 18px;
+    font-size:13px;
+    font-weight:600;
+    border-radius:10px;
+    margin-top:0;
+}
+
+.guide-inline-img{
+  width:100%;
+  display:block;
+  border-radius:14px;
+  margin-top:14px;
+}
+
+@media(max-width:650px){
+  .guide-intro{
+    padding-top:80px;
+  }
+
+  .guide-actions{
+    grid-template-columns:1fr;
+  }
+}
+
+body.guide-page {
+  background: #050505;
+}
+
+body.guide-page main {
+  background:
+    radial-gradient(circle at top center, rgba(229,9,20,.18), transparent 36%),
+    #050505;
+}

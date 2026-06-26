@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Guide Center | Tech Studio</title>
+
+  <meta name="description" content="Tech Studio Guide Center - Login guide, verification code, household help and customer support.">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="guide-page">
+
+<header class="topbar">
+  <div class="nav">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.png" alt="Tech Studio Logo">
+      </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#support">Support</a>
+    </div>
+  </div>
+</header>
+
+<main>
+    <section class="guide-intro">
+        <h1>Need Help?</h1>
+        <p>Everything you need after purchase.</p>
+    </section>
+
+  <section class="guide-center">
+
+    <div id="login" class="guide-panel">
+        <div class="card-head">
+            <div class="icon-box">🔐</div>
+            <h2>Login Guide</h2>
+        </div>
+
+        <p>
+            Learn how to login using the provided account details.
+        </p>
+
+        <img src="login-guide.png" class="guide-inline-img" alt="Login Guide">
+    </div>
+
+    <div id="verification" class="guide-panel">
+      <div class="card-head">
+        <div class="icon-box red">🛡️</div>
+        <h2>Verification Code</h2>
+      </div>
+
+      <p>
+        Watch the tutorial first, then get your verification code.
+      </p>
+
+      <div class="guide-actions">
+        <button onclick="watchVerification()" class="secondary-btn">
+          ▶ Watch Tutorial
+        </button>
+
+        <button onclick="getVerificationCode()" class="primary-btn">
+          Get Code
+        </button>
+      </div>
+    </div>
+
+    <div id="household" class="guide-panel">
+      <div class="card-head">
+        <div class="icon-box">🏠</div>
+        <h2>Household Issues</h2>
+      </div>
+
+      <p>
+        Follow the tutorial before redeeming your household code.
+      </p>
+
+      <div class="guide-actions">
+        <button onclick="watchHousehold()" class="secondary-btn">
+          ▶ Watch Tutorial
+        </button>
+
+        <button onclick="getHouseholdCode()" class="primary-btn">
+          Redeem Code
+        </button>
+      </div>
+    </div>
+
+    <div id="support" class="guide-panel">
+      <div class="card-head">
+        <div class="icon-box">💬</div>
+        <h2>Need Support?</h2>
+      </div>
+
+      <p>
+        If you still need help, contact our support team or join our updates channel.
+      </p>
+
+      <div class="guide-actions">
+        <button onclick="joinChannel()" class="secondary-btn">
+          Join Updates Channel
+        </button>
+
+        <button onclick="contactSupport()" class="primary-btn">
+          Contact Support
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  <div id="guideModal" class="modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeGuide()">×</button>
+      <h2>Login Guide</h2>
+      <img src="login-guide.png" class="modal-img">
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <h3>Tech Studio</h3>
+  <p>Premium Digital Access Service</p>
+  <small>© 2026 Tech Studio. All rights reserved.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
