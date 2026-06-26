@@ -115,11 +115,6 @@ body {
   display: inline-block;
 }
 
-@media (max-width: 600px) {
-  .nav-divider {
-    display: none;
-  }
-}
 
 .hero {
   min-height: 82vh;
@@ -291,7 +286,7 @@ body {
   #guide,
   #compare,
   #support {
-    scroll-margin-top: 10px;
+    scroll-margin-top: 35px;
   }
 }
 
@@ -752,12 +747,6 @@ button,
     cursor:pointer;
 }
 
-@media (max-width: 600px) {
-  .nav-links a[href="#compare"] {
-    display: none;
-  }
-}
-
 .guide-intro{
   max-width:760px;
   margin:auto;
@@ -846,4 +835,62 @@ body.guide-page main {
   background:
     radial-gradient(circle at top center, rgba(229,9,20,.18), transparent 36%),
     #050505;
+}
+
+/* ===========================
+   Mobile Hero Scale Fix
+=========================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 68vh !important;
+    padding: 55px 18px 45px !important;
+  }
+
+  .hero-content {
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+
+  .hero-tag {
+    margin-bottom: 10px !important;
+  }
+
+  .netflix-logo {
+    width: 520px !important;
+    max-width: 90% !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero h1 {
+    margin: 0 !important;
+  }
+
+  .hero-desc {
+    margin-top: 16px !important;
+  }
+
+  .hero-price {
+    margin-top: 22px !important;
+  }
+
+  .hero-buttons {
+    margin-top: 26px !important;
+    gap: 18px !important;
+  }
+}
+
+@media (max-width:768px){
+
+    .product-card{
+
+        transform: scale(0.85);
+
+        transform-origin: top center;
+
+        margin-bottom: -60px;
+
+    }
+
 }
