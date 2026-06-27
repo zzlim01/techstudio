@@ -1,39 +1,39 @@
-const ORDER_LINK = "https://t.me/TechStudio666bot";
+const ORDER_LINK = "https://t.me/techstudio_netflix";
 const CHANNEL_LINK = "https://t.me/techstudio_netflix";
 const SUPPORT_LINK = "https://t.me/Techstudioadmin";
 
-const VERIFICATION_TUTORIAL = "https://youtube.com";
+const VERIFICATION_TUTORIAL = "https://www.youtube.com/embed/F-UGUpTp-2c";
 const VERIFICATION_CODE_SITE = "https://yzmen.4knaifei.cn//#/login?cdk=----";
 
-const HOUSEHOLD_TUTORIAL = "https://youtube.com";
+const HOUSEHOLD_TUTORIAL = "https://www.youtube.com/embed/9elvYViwP4g?si=pW1DbxXUygsM-pWC";
 const HOUSEHOLD_CODE_SITE = "https://yz.naifei.store/#/login?redirect=/dashboard";
 
 function goOrder() {
-  window.location.href = ORDER_LINK;
+  window.open(ORDER_LINK, "_blank");
 }
 
 function joinChannel() {
-  window.location.href = CHANNEL_LINK;
+  window.open(CHANNEL_LINK, "_blank");
 }
 
 function contactSupport() {
-  window.location.href = SUPPORT_LINK;
+  window.open(SUPPORT_LINK, "_blank");
 }
 
 function watchVerification() {
-  window.location.href = VERIFICATION_TUTORIAL;
+  openVideo("Verification Tutorial", VERIFICATION_TUTORIAL);
 }
 
 function getVerificationCode() {
-  window.location.href = VERIFICATION_CODE_SITE;
+  window.open(VERIFICATION_CODE_SITE, "_blank");
 }
 
 function watchHousehold() {
-  window.location.href = HOUSEHOLD_TUTORIAL;
+  openVideo("Household Tutorial", HOUSEHOLD_TUTORIAL);
 }
 
 function getHouseholdCode() {
-  window.location.href = HOUSEHOLD_CODE_SITE;
+  window.open(HOUSEHOLD_CODE_SITE, "_blank");
 }
 
 function openGuide() {
@@ -57,3 +57,14 @@ window.addEventListener("load", function () {
     document.getElementById("loader").classList.add("hide");
   }, 900);
 });
+
+function openVideo(title, videoUrl) {
+  document.getElementById("videoTitle").innerText = title;
+  document.getElementById("videoIframe").src = videoUrl + "?autoplay=1";
+  document.getElementById("videoModal").style.display = "flex";
+}
+
+function closeVideo() {
+  document.getElementById("videoIframe").src = "";
+  document.getElementById("videoModal").style.display = "none";
+}

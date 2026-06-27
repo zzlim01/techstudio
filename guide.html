@@ -47,7 +47,12 @@
             Learn how to login using the provided account details.
         </p>
 
-        <img src="login-guide.png" class="guide-inline-img" alt="Login Guide">
+        <img
+        src="login-guide.png"
+        class="guide-inline-img"
+        alt="Login Guide"
+        onclick="openGuide()"
+        >
     </div>
 
     <div id="verification" class="guide-panel">
@@ -92,26 +97,34 @@
       </div>
     </div>
 
-    <div id="support" class="guide-panel">
-      <div class="card-head">
-        <div class="icon-box">💬</div>
-        <h2>Need Support?</h2>
+  </section>
+
+  <section id="support" class="section">
+
+      <div class="section-title">
+        
+          <h1>
+              Still Need Help?
+          </h1>
+
+          <p class="muted">
+              Can't find what you're looking for? <br>
+              Our support team is always happy to help.
+          </p>
+
       </div>
 
-      <p>
-        If you still need help, contact our support team or join our updates channel.
-      </p>
-
-      <div class="guide-actions">
-        <button onclick="joinChannel()" class="secondary-btn">
-          Join Updates Channel
-        </button>
-
+      <div class="support-actions">
         <button onclick="contactSupport()" class="primary-btn">
           Contact Support
         </button>
+
+        <button onclick="joinChannel()" class="secondary-btn">
+          Join Updates Channel
+        </button>
       </div>
-    </div>
+
+      </div>
 
   </section>
 
@@ -120,6 +133,24 @@
       <button class="modal-close" onclick="closeGuide()">×</button>
       <h2>Login Guide</h2>
       <img src="login-guide.png" class="modal-img">
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-card video-modal-card">
+      <button class="modal-close" onclick="closeVideo()">×</button>
+      <h2 id="videoTitle">Tutorial</h2>
+
+      <div class="video-frame">
+        <iframe
+          id="videoIframe"
+          src=""
+          title="Tutorial Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
   </div>
 
