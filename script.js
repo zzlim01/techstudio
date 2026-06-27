@@ -2,7 +2,7 @@ const ORDER_LINK = "https://t.me/techstudio_netflix";
 const CHANNEL_LINK = "https://t.me/techstudio_netflix";
 const SUPPORT_LINK = "https://t.me/Techstudioadmin";
 
-const VERIFICATION_TUTORIAL = "https://www.youtube.com/embed/F-UGUpTp-2c";
+const VERIFICATION_TUTORIAL = "https://www.youtube.com/embed/3SShcTpKUR0";
 const VERIFICATION_CODE_SITE = "https://yzmen.4knaifei.cn//#/login?cdk=----";
 
 const HOUSEHOLD_TUTORIAL = "https://www.youtube.com/embed/9elvYViwP4g?si=pW1DbxXUygsM-pWC";
