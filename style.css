@@ -1235,3 +1235,27 @@ body.guide-page main {
     font-size:12px;
   }
 }
+
+/* ===========================
+   Compare Image Responsive
+=========================== */
+
+.compare-desktop{
+  display:block;
+}
+
+.compare-mobile{
+  display:none;
+}
+
+@media(max-width:768px){
+
+  .compare-desktop{
+    display:none;
+  }
+
+  .compare-mobile{
+    display:block;
+  }
+
+}
