@@ -9,7 +9,7 @@ const HOUSEHOLD_TUTORIAL = "https://www.youtube.com/embed/IIqp5fH_2TM";
 const HOUSEHOLD_CODE_SITE = "https://yz.naifei.store/#/login?redirect=/dashboard";
 
 function goOrder() {
-  window.open(ORDER_LINK, "_blank");
+  window.location.href = "access.html";
 }
 
 function joinChannel() {
@@ -67,4 +67,20 @@ function openVideo(title, videoUrl) {
 function closeVideo() {
   document.getElementById("videoIframe").src = "";
   document.getElementById("videoModal").style.display = "none";
+}
+
+function copyTelegramLink() {
+  const link = "https://t.me/TechStudio666bot";
+
+  navigator.clipboard.writeText(link).then(function () {
+    const message = document.getElementById("copyMessage");
+
+    if (message) {
+      message.style.display = "block";
+
+      setTimeout(function () {
+        message.style.display = "none";
+      }, 2000);
+    }
+  });
 }
