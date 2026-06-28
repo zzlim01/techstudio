@@ -1259,3 +1259,11 @@ body.guide-page main {
   }
 
 }
+
+@media (max-width:768px){
+
+    .start-intro{
+        padding-top:35px;
+    }
+
+}
