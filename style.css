@@ -824,7 +824,7 @@ button,
 
 @media(max-width:650px){
   .guide-intro{
-    padding-top:80px;
+    padding-top:30px;
   }
 
   .guide-actions{
@@ -1174,4 +1174,64 @@ body.guide-page main {
 
     align-items:center;
 
+}
+
+/* HOME Guide section - mobile only */
+@media (max-width:768px){
+
+  #guide.section{
+    padding-top:28px;
+    padding-bottom:28px;
+  }
+
+  #guide .section-title{
+    margin-bottom:18px;
+  }
+
+  #guide .section-title h2{
+    font-size:30px;
+  }
+
+  #guide .mini-card{
+    padding:18px;
+    border-radius:18px;
+  }
+
+  #guide .guide-grid{
+    gap:12px;
+  }
+
+  #guide .card-head{
+    gap:10px;
+    margin-bottom:10px;
+  }
+
+  #guide .icon-box{
+    width:36px;
+    height:36px;
+    border-radius:12px;
+    font-size:18px;
+  }
+
+  #guide .mini-card h3{
+    font-size:18px;
+  }
+
+  #guide .mini-card p{
+    font-size:13px;
+    line-height:1.5;
+    margin:10px 0 14px;
+  }
+
+  #guide .two-buttons{
+    gap:8px;
+  }
+
+  #guide button,
+  #guide .secondary-btn,
+  #guide .primary-btn{
+    height:38px;
+    padding:0 14px;
+    font-size:12px;
+  }
 }
