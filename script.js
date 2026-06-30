@@ -5,7 +5,7 @@ const SUPPORT_LINK = "https://t.me/Techstudioadmin";
 const VERIFICATION_TUTORIAL = "https://www.youtube.com/embed/3SShcTpKUR0";
 const VERIFICATION_CODE_SITE = "https://yzmen.4knaifei.cn//#/login?cdk=----";
 
-const HOUSEHOLD_TUTORIAL = "https://www.youtube.com/embed/IIqp5fH_2TM";
+const HOUSEHOLD_TUTORIAL = "https://www.youtube.com/embed/KXP8a0PJmwU";
 const HOUSEHOLD_CODE_SITE = "https://yz.naifei.store/#/login?redirect=/dashboard";
 
 function goOrder() {
